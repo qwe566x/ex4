@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+    <script src="./src/controller/initilize.js"></script>
+    <script src="./src/model/employee.js"></script>
+    <script src="./src/view/create.js"></script>
+    <script>
+        window.addEventListener('load',init.view.checkEmployee.setupUI);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class=" container container-fluid container-center">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 ">
+                <div class="card card-primary">
+                    <div class="card-heading">Enter Your Details Here
+                    </div>
+                    <div class="card-body">
+                        <form name="myform">
+                            <div class="form-group">
+                                <label for="myName">Name *</label>
+                                <input id="myName" name="myName" class="form-control" type="text" pattern="[A-Za-z]+" maxlength="20" 	
+                                    placeholder="Enter your FirstName" required>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label><br>
+                                <input id="email" name="email" type="Email" class="form-control" maxlength="30"
+                                    placeholder="Enter your Email" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date Of Joining *</label>
+                                <input type="date" name="dob" id="dob" class="form-control"
+                                    placeholder="Enter your Dateof Birth" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="age">age *</label>
+                                <input type="number" name="age" id="age" class="form-control" min="18" max="60"
+                                   placeholder="Enter your age" required>
+
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select name="gender" id="gender" class="form-control" required>
+                                    <option selected>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="text" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter Your phone number" pattern="[0-9]{10}" required>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Zipcode">Zipcode *</label>
+                                <input type="number" id="Zipcode" name="Zipcode" class="form-control"
+                                    placeholder="Enter Your phone Zipcode" maxlength="6" pattern="[0-9]+" required>
+
+                            </div>
+
+
+                            <label for="disc">Select the instruments interested to learn *</label><br>
+                            <input type="checkbox" id="inst1" name="inst1" value="Guitar">
+                            <label for="inst1"> Guitar</label><br>
+                            <input type="checkbox" id="inst2" name="inst2" value="Flute">
+                            <label for="inst3"> Flute</label><br>
+                            <input type="checkbox" id="inst3" name="inst3" value="Violin">
+                            <label for="inst3">Violin</label><br>
+                            <input type="checkbox" id="inst4" name="inst4" value="Tabla">
+                            <label for="inst4">Tabla</label><br>
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="Address">Address *</label>
+                        <textarea class="form-control" name="address" id="address" cols="20" rows="5" id="address"
+                            minlength="12" required></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="disc">Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter your Short description"></textarea>
+                    </div>
+                    <div class="form-group">
+
+                        <input id="submit" type="submit" value="submit" class="btn btn-primary center"></button>
+                        <input id="reset" type="reset" value="reset" class="btn btn-primary center"></button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </html>
