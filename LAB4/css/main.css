@@ -1,0 +1,13 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
+.palel-primary {
+    border-color: #786be9;
+}
+
+.card-primary>.card-heading {
+    background: #76afdf;
+
+}
+
+.card-primary>.card-body {
+    background-color: #f37878;
+}
